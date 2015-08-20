@@ -1,6 +1,6 @@
 {
   "name": "rockerYoumi",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^0.5.1",
