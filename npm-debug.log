@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/rocker/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/rocker/.npm/rockerYoumi/0.1.7/package.tgz', '.' ]
+12 verbose tarball /home/rocker/.npm/rockerYoumi/0.1.7/package.tgz
+13 verbose folder .
+14 info prepublish rockerYoumi@0.1.7
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/rocker/.npm/1f1177db-tar.lock
+17 silly lockFile 3fcc2da6-pm-rockerYoumi-0-1-7-package-tgz tar:///home/rocker/.npm/rockerYoumi/0.1.7/package.tgz
+18 verbose lock tar:///home/rocker/.npm/rockerYoumi/0.1.7/package.tgz /home/rocker/.npm/3fcc2da6-pm-rockerYoumi-0-1-7-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 3fcc2da6-pm-rockerYoumi-0-1-7-package-tgz tar:///home/rocker/.npm/rockerYoumi/0.1.7/package.tgz
+22 silly lockFile 3fcc2da6-pm-rockerYoumi-0-1-7-package-tgz tar:///home/rocker/.npm/rockerYoumi/0.1.7/package.tgz
+23 silly lockFile 6040ad9f-er-npm-rockerYoumi-0-1-7-package /home/rocker/.npm/rockerYoumi/0.1.7/package
+24 verbose lock /home/rocker/.npm/rockerYoumi/0.1.7/package /home/rocker/.npm/6040ad9f-er-npm-rockerYoumi-0-1-7-package.lock
+25 silly lockFile 6040ad9f-er-npm-rockerYoumi-0-1-7-package /home/rocker/.npm/rockerYoumi/0.1.7/package
+26 silly lockFile 6040ad9f-er-npm-rockerYoumi-0-1-7-package /home/rocker/.npm/rockerYoumi/0.1.7/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'rockerYoumi',
+29 silly publish   version: '0.1.7',
+29 silly publish   devDependencies:
+29 silly publish    { grunt: '^0.4.5',
+29 silly publish      'grunt-contrib-concat': '^0.5.1',
+29 silly publish      'grunt-contrib-connect': '^0.11.2',
+29 silly publish      'grunt-contrib-jshint': '^0.11.2',
+29 silly publish      'grunt-contrib-nodeunit': '~0.4.1',
+29 silly publish      'grunt-contrib-sass': '^0.9.2',
+29 silly publish      'grunt-contrib-uglify': '^0.9.1',
+29 silly publish      'grunt-contrib-watch': '^0.6.1',
+29 silly publish      'grunt-release': '^0.13.0' },
+29 silly publish   gitHead: 'c5b0c63b5e6e77d5e7b9097da51813701db2f442',
+29 silly publish   readme: 'ERROR: No README data found!',
+29 silly publish   _id: 'rockerYoumi@0.1.7',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: 'ed3563ed651109d5eae84f0bc7f6f4c7ff92f1c7',
+29 silly publish   _from: '.' }
+30 verbose request where is /rockerYoumi
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id c3d5011a32d6affc
+33 verbose url raw /rockerYoumi
+34 verbose url resolving [ 'https://registry.npmjs.org/', './rockerYoumi' ]
+35 verbose url resolved https://registry.npmjs.org/rockerYoumi
+36 verbose request where is https://registry.npmjs.org/rockerYoumi
+37 info trying registry request attempt 1 at 11:20:56
+38 http PUT https://registry.npmjs.org/rockerYoumi
+39 http 400 https://registry.npmjs.org/rockerYoumi
+40 verbose headers { 'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '54',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Thu, 20 Aug 2015 03:20:58 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-nrt6132-NRT',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1440040857.144487,VS0,VE1425' }
+41 error publish Failed PUT 400
+42 error Error: name can no longer contain capital letters : rockerYoumi
+42 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+42 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+42 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:448:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Linux 3.16.0-46-generic
+45 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+46 error cwd /home/rocker/Documents/gruntTest/projA
+47 error node -v v0.10.37
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
